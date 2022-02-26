@@ -13,6 +13,11 @@
 		E90178ED27C8E1840069FA97 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E90178EB27C8E1840069FA97 /* Main.storyboard */; };
 		E90178EF27C8E1850069FA97 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E90178EE27C8E1850069FA97 /* Assets.xcassets */; };
 		E90178F227C8E1850069FA97 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E90178F027C8E1850069FA97 /* LaunchScreen.storyboard */; };
+		E90178FA27C8E4D90069FA97 /* GameScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = E90178F927C8E4D90069FA97 /* GameScene.swift */; };
+		E90178FC27CA255C0069FA97 /* get_red_apple.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = E90178FB27CA255C0069FA97 /* get_red_apple.mp3 */; };
+		E90178FE27CA2D8F0069FA97 /* get_yellow_apple.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = E90178FD27CA2D8F0069FA97 /* get_yellow_apple.mp3 */; };
+		E901790027CA2ECD0069FA97 /* gameover.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = E90178FF27CA2ECD0069FA97 /* gameover.mp3 */; };
+		E901790427CA35910069FA97 /* bgm.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = E901790327CA35910069FA97 /* bgm.mp3 */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +29,11 @@
 		E90178EE27C8E1850069FA97 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E90178F127C8E1850069FA97 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		E90178F327C8E1850069FA97 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E90178F927C8E4D90069FA97 /* GameScene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameScene.swift; sourceTree = "<group>"; };
+		E90178FB27CA255C0069FA97 /* get_red_apple.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = get_red_apple.mp3; sourceTree = "<group>"; };
+		E90178FD27CA2D8F0069FA97 /* get_yellow_apple.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = get_yellow_apple.mp3; sourceTree = "<group>"; };
+		E90178FF27CA2ECD0069FA97 /* gameover.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = gameover.mp3; sourceTree = "<group>"; };
+		E901790327CA35910069FA97 /* bgm.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = bgm.mp3; path = ../../../Desktop/bgm.mp3; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -59,10 +69,15 @@
 				E90178E527C8E1840069FA97 /* AppDelegate.swift */,
 				E90178E727C8E1840069FA97 /* SceneDelegate.swift */,
 				E90178E927C8E1840069FA97 /* ViewController.swift */,
+				E90178F927C8E4D90069FA97 /* GameScene.swift */,
 				E90178EB27C8E1840069FA97 /* Main.storyboard */,
 				E90178EE27C8E1850069FA97 /* Assets.xcassets */,
 				E90178F027C8E1850069FA97 /* LaunchScreen.storyboard */,
 				E90178F327C8E1850069FA97 /* Info.plist */,
+				E90178FB27CA255C0069FA97 /* get_red_apple.mp3 */,
+				E90178FD27CA2D8F0069FA97 /* get_yellow_apple.mp3 */,
+				E90178FF27CA2ECD0069FA97 /* gameover.mp3 */,
+				E901790327CA35910069FA97 /* bgm.mp3 */,
 			);
 			path = FlappyBird;
 			sourceTree = "<group>";
@@ -127,7 +142,11 @@
 			files = (
 				E90178F227C8E1850069FA97 /* LaunchScreen.storyboard in Resources */,
 				E90178EF27C8E1850069FA97 /* Assets.xcassets in Resources */,
+				E901790027CA2ECD0069FA97 /* gameover.mp3 in Resources */,
+				E90178FE27CA2D8F0069FA97 /* get_yellow_apple.mp3 in Resources */,
+				E90178FC27CA255C0069FA97 /* get_red_apple.mp3 in Resources */,
 				E90178ED27C8E1840069FA97 /* Main.storyboard in Resources */,
+				E901790427CA35910069FA97 /* bgm.mp3 in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -140,6 +159,7 @@
 			files = (
 				E90178EA27C8E1840069FA97 /* ViewController.swift in Sources */,
 				E90178E627C8E1840069FA97 /* AppDelegate.swift in Sources */,
+				E90178FA27C8E4D90069FA97 /* GameScene.swift in Sources */,
 				E90178E827C8E1840069FA97 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -296,7 +316,7 @@
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = UIInterfaceOrientationPortrait;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -306,7 +326,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -324,7 +344,7 @@
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = UIInterfaceOrientationPortrait;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -334,7 +354,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
